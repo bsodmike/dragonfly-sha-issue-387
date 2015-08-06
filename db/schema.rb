@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(version: 20150806163017) do
 
   create_table "packages", force: :cascade do |t|
-    t.string   "name"
-    t.string   "image_uid"
-    t.string   "image_name"
+    t.string   "name",       limit: 255
+    t.string   "image_uid",  limit: 255
+    t.string   "image_name", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
