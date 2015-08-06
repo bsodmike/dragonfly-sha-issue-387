@@ -1,0 +1,16 @@
+<h1>Add Package</h1>
+
+<%= @package.inspect %>
+
+<%= form_for @package do |f| %>
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </fieldset>
+  <%= f.submit :save %>
+<% end %>
