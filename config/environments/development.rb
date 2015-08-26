@@ -1,4 +1,4 @@
-Rails.application.configure do
+DragonflyDummy::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -19,9 +19,6 @@ Rails.application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
-  # Raise an error on page load if there are pending migrations.
-  config.active_record.migration_error = :page_load
-
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
@@ -38,4 +35,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.secret_token = '96ac1a28f18893a42b221926a99315d0523d130eb51a52c20a8bd954e742e3fd8c29c96810c36c4d5d5ff2e4dcd6fff0b9c1ab6380985ac14139449a1ffdf010'
+  
 end

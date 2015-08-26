@@ -1,5 +1,10 @@
 <h1>Packages</h1>
 
-<%= @package.inspect %>
+<%= link_to "Create package", main_app.new_package_path %>
 
-<%= image_tag @package.image.url %>
+<% if @package %>
+<div class="packages">
+  <h2>Package: <%= @package.name.titleize %></h2>
+  <%= image_tag @package.image.url, width: "500px" %>
+</div>
+<% end %>

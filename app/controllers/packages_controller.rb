@@ -8,7 +8,7 @@ class PackagesController < ApplicationController
   end
 
   def create
-    @package = Package.new(params.require(:package).permit(:name, :image))
+    @package = Package.new(params[:package])
 
     if @package.save
       flash[:notice] = "Package successfully created"
