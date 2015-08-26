@@ -10,6 +10,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 
 gem 'dragonfly', path: '../dragonfly_fork'
+gem 'refinerycms', github: 'refinery/refinerycms', branch: 'master'
 
 group :development, :test do
   #gem 'byebug'
